@@ -1,0 +1,36 @@
+{
+    "title": "Lutron RadioRA3",
+    "description": "Integration for Lutron RadioRA3 system to control and monitor devices, zones, scenes, and more.",
+    "components": {
+        "sensor": {
+            "name": "Lutron Sensor",
+            "description": "Monitors the state of various sensors in the Lutron system."
+        },
+        "light": {
+            "name": "Lutron Light",
+            "description": "Controls the lighting in the Lutron system."
+        },
+        "switch": {
+            "name": "Lutron Switch",
+            "description": "Toggles the state of switches in the Lutron system."
+        },
+        "scene": {
+            "name": "Lutron Scene",
+            "description": "Activates and deactivates scenes in the Lutron system."
+        },
+        "device": {
+            "name": "Lutron Device",
+            "description": "Monitors and controls various devices in the Lutron system."
+        }
+    },
+    "errors": {
+        "connection_failed": "Failed to connect to the Lutron RadioRA3 system.",
+        "invalid_response": "Received an invalid response from the Lutron API.",
+        "device_not_found": "The specified device was not found in the Lutron system."
+    },
+    "services": {
+        "turn_on": "Turn on the specified device.",
+        "turn_off": "Turn off the specified device.",
+        "activate_scene": "Activate the specified scene."
+    }
+}

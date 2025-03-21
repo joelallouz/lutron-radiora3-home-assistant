@@ -1,0 +1,35 @@
+service_control:
+  description: Control Lutron devices
+  fields:
+    entity_id:
+      description: The entity ID of the device to control
+      example: light.living_room
+    brightness:
+      description: The brightness level to set (0-100)
+      example: 75
+    scene:
+      description: The name of the scene to activate
+      example: Movie Night
+  result: 
+    description: The result of the service call
+    example: success
+
+scene_activate:
+  description: Activate a specific scene
+  fields:
+    scene_name:
+      description: The name of the scene to activate
+      example: Evening
+  result:
+    description: The result of the scene activation
+    example: success
+
+switch_toggle:
+  description: Toggle the state of a switch
+  fields:
+    entity_id:
+      description: The entity ID of the switch to toggle
+      example: switch.garage_door
+  result:
+    description: The result of the toggle action
+    example: success
