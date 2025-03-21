@@ -22,7 +22,18 @@ This custom component allows you to integrate the Lutron RadioRA3 system with Ho
 
 3. **Restart Home Assistant**: After adding the repository, restart your Home Assistant instance to load the new integration.
 
-4. **Configure the Integration**: Navigate to Configuration > Integrations in Home Assistant, and add the Lutron RadioRA3 integration. Follow the prompts to enter your Lutron system's details.
+4. **Configure the Integration**: Add the following configuration to your `configuration.yaml` file:
+
+```yaml
+lutron_radiora3:
+  host: YOUR_LUTRON_HOST
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+```
+
+Replace `YOUR_LUTRON_HOST`, `YOUR_USERNAME`, and `YOUR_PASSWORD` with your Lutron system's details.
+
+5. **Restart Home Assistant**: Restart your Home Assistant instance to apply the new configuration.
 
 ## Usage
 
